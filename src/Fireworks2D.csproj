@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' " />
+
+    <ItemGroup>
+      <PackageReference Include="CommandLineParser" Version="2.9.1" />
+      <PackageReference Include="OpenTK" Version="5.0.0-pre.12" />
+      <PackageReference Include="tgalib-core" Version="0.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="resources\shader.frag">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="resources\shader.vert">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="resources\texture\oldschool_9x16.tga">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="resources\texture\oldschool_16x16.tga">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
