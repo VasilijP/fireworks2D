@@ -1,6 +1,11 @@
 # Fireworks 2D
 
-Best to run a **Release** build in a full-screen mode with 3 buffers like: `dotnet Fireworks2D.dll -f -l 2 -w 3840 -h 2160`.
+Best to run a **Release** build in a full-screen mode 
+
+- with 3 buffers like: `dotnet Fireworks2D.dll -f -l 2 -w 3840 -h 2160`
+- with a V-sync enabled: `dotnet Fireworks2D.dll -v -f -l 2 -w 3840 -h 2160`
+- higher resolution (will be down-sampled to display resolution using OpenGL): 
+  `dotnet Fireworks2D.dll -f -v -w 5760 -h 3240 -l 2`
 
 Originally a DOS project written in a year 2000 using [Pascal (programming language)](https://en.wikipedia.org/wiki/Pascal_(programming_language)) and compiled using [Turbo Pascal](https://en.wikipedia.org/wiki/Turbo_Pascal).
 
